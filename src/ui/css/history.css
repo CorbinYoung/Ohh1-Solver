@@ -1,0 +1,30 @@
+.history {
+  grid-area: history;
+  background: #2a2a2a;
+  border-radius: 15px;
+  color: #33cc33;
+  text-align: center;
+}
+
+.historyTitle {
+  background: #444444;
+  border-radius: 15px;
+  height: 30px;
+  padding-top: 10px;
+}
+
+.moves {
+  margin-top: 5px;
+  background: #444444;
+  border-radius: 15px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.moves > div {
+  background: #777777;
+  border-radius: 15px;
+  height: 30px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}

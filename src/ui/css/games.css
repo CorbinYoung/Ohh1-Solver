@@ -1,0 +1,68 @@
+@import './buttons.css';
+@import './boards.css';
+@import './history.css';
+
+.game-4 {
+  font-family: source-code-pro, Menlo;
+  background: #222222;
+  display: grid;
+  grid-template:
+    "board-4 . history" 615px
+    "buttons back ." 50px
+    / 6fr 1fr 5fr;
+  padding: 30px 20px 0px 20px;
+  grid-row-gap: 10px;
+  height: 100vh;
+}
+
+.game-6 {
+  font-family: source-code-pro, Menlo;
+  background: #222222;
+  display: grid;
+  grid-template:
+    "board-6 . history" 625px
+    "buttons back ." 50px
+    / 6fr 1fr 5fr;
+  padding: 30px 20px 0px 20px;
+  grid-row-gap: 10px;
+  height: 100vh;
+}
+
+.game-8 {
+  font-family: source-code-pro, Menlo;
+  background: #222222;
+  display: grid;
+  grid-template:
+    "board-8 . history" 635px
+    "buttons back ." 50px
+    / 6fr 1fr 5fr;
+  padding: 30px 20px 0px 20px;
+  grid-row-gap: 10px;
+  height: 100vh;
+}
+
+.game-10 {
+  font-family: source-code-pro, Menlo;
+  background: #222222;
+  display: grid;
+  grid-template:
+    "board-10 . history" 645px
+    "buttons back ." 50px
+    / 6fr 1fr 5fr;
+  padding: 30px 20px 0px 20px;
+  grid-row-gap: 10px;
+  height: 100vh;
+}
+
+.game-12 {
+  font-family: source-code-pro, Menlo;
+  background: #222222;
+  display: grid;
+  grid-template:
+    "board-12 . history" 655px
+    "buttons back ." 50px
+    / 6fr 1fr 5fr;
+  padding: 30px 20px 0px 20px;
+  grid-row-gap: 10px;
+  height: 100vh;
+}

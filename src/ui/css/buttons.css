@@ -1,0 +1,17 @@
+.buttons {
+  display: grid;
+  grid-area: buttons;
+  grid-template: ". solve . reset ." / 1fr 1fr 1fr 1fr 1fr;
+}
+
+.reset {
+  grid-area: reset;
+}
+
+.solve {
+  grid-area: solve;
+}
+
+.back {
+  grid-area: back;
+}
