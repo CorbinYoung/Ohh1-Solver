@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import './css/games.css';
+import React, { useMemo, useState } from 'react';
+import './games.css';
 import Box from './Box';
 import solver from '../../js/algorithm';
 import { getChanged } from '../../js/utils';
 
-const initialBoxes = size => Array.from({ length: Math.pow(size, 2) }).map(_ => 0);
+const Game = ({ size, changeSize }) => {
+  const initialBoxes = useMemo(() => Array.from({ length: Math.pow(size, 2) }).map(_ => 0), [size]);
 
-const App = ({ size }) => {
-  const [boxes, setBoxes] = useState(initialBoxes(size));
+  const [boxes, setBoxes] = useState(() => initialBoxes);
   const [history, setHistory] = useState([]);
 
   return (
@@ -26,7 +26,7 @@ const App = ({ size }) => {
         ))}
       </div>
       <div className="buttons">
-      <input
+        <input
           className="solve"
           type="button"
           value="Solve"
@@ -41,10 +41,11 @@ const App = ({ size }) => {
           type="button"
           value="Reset"
           onClick={ () => {
-            setBoxes(initialBoxes(size));
+            setBoxes(initialBoxes);
             setHistory([]);
           }}
         />
+        <input className="back" type="button" value="Back" onClick={changeSize} />
       </div>
       <div className="history">
           <div className="historyTitle">History</div>
@@ -72,4 +73,4 @@ const App = ({ size }) => {
   );
 }
 
-export default App;
+export default Game;
